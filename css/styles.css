@@ -44,14 +44,18 @@
 /* ========  FINAL ESTILOS NAVEGADOR ========= */
 /* ========  ESTILOS PANEL ========= */
 .panel {
-  display: flex;
-  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(1, 2fr);
+  width: 100%;
   padding: 20px;
   margin: 20px auto;
   align-content: center;
+  margin-top: 150px;
 }
 .panel .informacion {
   font-size: 50px;
+  margin: 20px auto;
+  justify-content: center;
 }
 .panel .informacion h1 {
   font-size: large sans-serif;
@@ -62,6 +66,7 @@
   position: relative;
   display: flex;
   justify-content: center;
+  left: -105%;
 }
 .panel .informacion h1 .span {
   font-family: "Clicker script", cursive;
@@ -88,21 +93,33 @@
   top: 0;
   right: 0;
 }
-.panel .informacion .info-prop {
+.panel .informacion .pablo {
+  display: flex;
+  flex-direction: column;
+  margin-top: -20px;
+  margin: 0;
+  padding: 0;
+}
+.panel .informacion .pablo .info-prop {
+  display: flex;
+  flex-wrap: wrap;
   margin-top: 50px;
   font-size: 50px;
   font-weight: 700;
+  right: 35%;
 }
-.panel .informacion .info-prop span {
+.panel .informacion .pablo .info-prop span {
   font-family: "Clicker script", Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 50px;
   color: #0062ff;
 }
-.panel .informacion .descrip {
-  font-size: 60%;
+.panel .informacion .pablo .descrip {
+  margin-top: 3rem;
+  font-size: 50%;
+  width: 590px;
   font-weight: 100;
 }
-.panel .informacion .descrip a {
+.panel .informacion .pablo .descrip a {
   color: black;
   text-decoration: none;
   list-style: none;
