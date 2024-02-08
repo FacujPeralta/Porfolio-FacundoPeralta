@@ -6,8 +6,54 @@
   background-color: #ccc;
 }
 
-.body {
-  font-family: "Clicker script", Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+* {
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  outline: none;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  font-size: 25px;
+}
+
+/* ========  ESTILOS TITULOS C/U  ========= */
+.section-title {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.section-title h2 {
+  font-size: 40px;
+  color: black;
+  font-weight: 700;
+  position: relative;
+}
+.section-title h2::before {
+  content: "";
+  height: 4px;
+  width: 210px;
+  background-color: #0095ff;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+.section-title h2::after {
+  content: "";
+  height: 3px;
+  width: 180px;
+  background-color: #0095ff;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 8px;
 }
 
 /* ========  ESTILOS NAVEGADOR ========= */
@@ -44,8 +90,8 @@
 /* ========  FINAL ESTILOS NAVEGADOR ========= */
 /* ========  ESTILOS PANEL ========= */
 .panel {
-  display: grid;
-  grid-template-columns: repeat(1, 2fr);
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
   padding: 20px;
   margin: 20px auto;
@@ -59,19 +105,21 @@
 }
 .panel .informacion h1 {
   font-size: large sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   padding: 15px 20px;
   font-size: 70px;
   letter-spacing: 5px;
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   left: -3%;
-  top: -35%;
+  top: -25%;
+  gap: 10px;
 }
 .panel .informacion h1 .span {
   font-family: "Clicker script", cursive;
-  font-size: 40px;
+  font-size: 70px;
 }
 .panel .informacion h1::before {
   content: "";
@@ -96,9 +144,10 @@
 }
 .panel .informacion .pablo {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   margin-top: -20px;
-  margin: 0;
+  margin: 20px;
   padding: 0;
   top: -30%;
 }
@@ -117,6 +166,8 @@
   color: #0062ff;
 }
 .panel .informacion .pablo .descrip {
+  display: flex;
+  flex-wrap: wrap;
   margin-top: 3rem;
   font-size: 50%;
   width: 590px;
@@ -132,6 +183,111 @@
   position: absolute;
   padding: 1px;
   border-bottom: 5px solid #0095ff;
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 70px;
+  height: 500px;
+  margin-top: 100px;
+  cursor: pointer;
+}
+.skills h5 {
+  margin: 30px;
+}
+.skills .progress {
+  gap: 30px;
+}
+.skills .progress:hover {
+  transform: scale(1.5);
+  transition: 0.5s;
+}
+.skills .skill-precent {
+  align-items: center;
+  text-align: center;
+}
+
+.trabajos {
+  margin: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.trabajos .cada-uno {
+  width: 550px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 20px;
+  gap: 30px;
+  border: 1px solid black;
+}
+.trabajos .cada-uno:hover {
+  box-shadow: 0 10px 5px 10px rgba(78, 78, 78, 0.299);
+}
+.trabajos .cada-uno img {
+  display: flex;
+  align-items: start;
+  align-self: center;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border: 1px solid black;
+}
+.trabajos .cada-uno img:hover {
+  transform: scale(1.05);
+  transition: 1.5s;
+}
+.trabajos .cada-uno a {
+  color: black;
+  text-decoration: none;
+}
+.trabajos .cada-uno a:hover {
+  color: #0095ff;
+}
+.trabajos .cada-uno p {
+  font: 500;
+  font-size: 20px;
+}
+
+.contact section {
+  display: flex;
+  width: 100%;
+  margin: 20px;
+  padding: 10px;
+}
+.contact section .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact {
+  width: 750px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 20px auto;
+}
+.contact a {
+  color: #0062ff;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 30px;
+  text-align: center;
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: repeat(1, 2fr);
+  flex-wrap: wrap;
+  margin: 20px auto;
+}
+.contact a:hover {
+  box-shadow: 10px 10px 20px rgb(146, 145, 145);
 }
 
 /*# sourceMappingURL=styles.css.map */
