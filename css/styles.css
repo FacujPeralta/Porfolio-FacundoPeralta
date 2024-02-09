@@ -3,7 +3,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background-color: #ccc;
+  background-color: #f2f2ff;
 }
 
 * {
@@ -26,6 +26,7 @@ body {
   flex: 0 0 100%;
   max-width: 100%;
   margin-bottom: 60px;
+  margin-top: 250px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -56,38 +57,6 @@ body {
   margin-top: 8px;
 }
 
-/* ========  ESTILOS NAVEGADOR ========= */
-.nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin: 20px;
-  padding: 20px;
-  text-align: center;
-  align-self: center;
-}
-.nav ul {
-  display: flex;
-  padding: 20px;
-  text-decoration: none;
-  list-style: none;
-}
-.nav ul li a {
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  color: black;
-  list-style: none;
-  text-decoration: none;
-  text-align: center;
-  font-size: 25px;
-}
-.nav ul li a:hover {
-  color: #0095ff;
-}
-
-/* ========  FINAL ESTILOS NAVEGADOR ========= */
 /* ========  ESTILOS PANEL ========= */
 .panel {
   display: flex;
@@ -103,7 +72,20 @@ body {
   margin: 20px auto;
   justify-content: center;
 }
-.panel .informacion h1 {
+.panel .informacion .inicio {
+  margin-top: -20px;
+  display: flex;
+  flex-direction: column;
+}
+.panel .informacion .inicio img {
+  margin: 10px auto;
+  width: 500px;
+  height: 500px;
+  justify-content: center;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+.panel .informacion .inicio h1 {
   font-size: large sans-serif;
   font-weight: 500;
   padding: 15px 20px;
@@ -112,26 +94,25 @@ body {
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  left: -3%;
-  top: -25%;
+  top: 10%;
   gap: 10px;
 }
-.panel .informacion h1 .span {
+.panel .informacion .inicio h1 .span {
   font-family: "Clicker script", cursive;
-  font-size: 70px;
+  font-size: 90px;
+  margin-top: -20px;
 }
-.panel .informacion h1::before {
+.panel .informacion .inicio h1::before {
   content: "";
   position: absolute;
   width: 90%;
   height: 75px;
   border-bottom: 5px solid #0095ff;
   border-left: 5px solid #0095ff;
-  bottom: 0;
+  bottom: 15%;
   left: 0;
 }
-.panel .informacion h1::after {
+.panel .informacion .inicio h1::after {
   content: "";
   display: block;
   position: absolute;
@@ -142,16 +123,29 @@ body {
   top: 0;
   right: 0;
 }
-.panel .informacion .pablo {
+
+.sobre-mi {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 15%;
+  align-items: center;
+  text-align: start;
+  padding: 25px;
+}
+.sobre-mi .pablo {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  margin-top: -20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: -40%;
   margin: 20px;
   padding: 0;
   top: -30%;
 }
-.panel .informacion .pablo .info-prop {
+.sobre-mi .pablo .info-prop {
   display: flex;
   flex-wrap: wrap;
   text-align: start;
@@ -160,20 +154,26 @@ body {
   font-weight: 700;
   right: 40%;
 }
-.panel .informacion .pablo .info-prop span {
+.sobre-mi .pablo .info-prop span {
   font-family: "Clicker script", Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 50px;
   color: #0062ff;
 }
-.panel .informacion .pablo .descrip {
+.sobre-mi .pablo .descrip {
   display: flex;
   flex-wrap: wrap;
   margin-top: 3rem;
-  font-size: 50%;
-  width: 590px;
-  font-weight: 100;
+  font-size: 110%;
+  width: 790px;
+  font-weight: 700;
 }
-.panel .informacion .pablo .descrip a {
+.sobre-mi .pablo .descrip span {
+  font-family: "Clicker script", Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 45px;
+  color: #0062ff;
+  justify-content: center;
+}
+.sobre-mi .pablo .descrip a {
   color: black;
   text-decoration: none;
   list-style: none;
@@ -184,15 +184,24 @@ body {
   padding: 1px;
   border-bottom: 5px solid #0095ff;
 }
+.sobre-mi .btn-cv {
+  padding: 20px 20px;
+  margin: 10px;
+  border-radius: 25px;
+  color: #0062ff;
+  cursor: pointer;
+}
+.sobre-mi .btn-cv:hover {
+  box-shadow: 0 10px 5px rgba(0, 149, 255, 0.3725490196);
+}
 
 .skills {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 70px;
-  height: 500px;
-  margin-top: 100px;
+  gap: 12%;
+  height: 700px;
   cursor: pointer;
 }
 .skills h5 {
@@ -234,8 +243,8 @@ body {
   display: flex;
   align-items: start;
   align-self: center;
-  width: 250px;
-  height: 250px;
+  width: 350px;
+  height: 350px;
   object-fit: cover;
   border: 1px solid black;
 }
@@ -253,6 +262,27 @@ body {
 .trabajos .cada-uno p {
   font: 500;
   font-size: 20px;
+}
+
+.educacion {
+  width: 50%;
+  padding: 30px;
+  margin: 20px auto;
+  margin-bottom: 150px;
+  gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.educacion .tarjet-educ {
+  margin: 20px;
+  padding: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.495);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.educacion .tarjet-educ:hover {
+  transform: scale(1.3);
+  transition: 3s;
 }
 
 .contact section {

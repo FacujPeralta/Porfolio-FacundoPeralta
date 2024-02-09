@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: #ccc;
+    background-color: #f2f2ff;
 }
 *{
     padding: 0px;
@@ -23,6 +23,7 @@ body{
     flex: 0 0 100%;
     max-width: 100%;
     margin-bottom: 60px;
+    margin-top: 250px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -53,41 +54,6 @@ body{
         
     }
 }
-
-/* ========  ESTILOS NAVEGADOR ========= */
-.nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin: 20px;
-    padding: 20px;
-    text-align: center;
-    align-self: center;
-    ul{
-        display: flex;
-        padding: 20px;
-        text-decoration: none;
-        list-style: none;
-        li a{
-            padding: 20px;
-            display: flex;
-            
-            justify-content: space-between;
-            flex-direction: row;
-            color: black;
-            list-style: none;
-            text-decoration: none;
-            text-align: center;
-            font-size: 25px;
-            &:hover{
-                color: #0095ff;
-            }
-        }
-    }
-}
-
-/* ========  FINAL ESTILOS NAVEGADOR ========= */
-
 /* ========  ESTILOS PANEL ========= */
 .panel{
     display:flex;
@@ -101,100 +67,138 @@ body{
         font-size: 50px;
         margin: 20px auto;
         justify-content:center;
-        h1{    
-            font-size:large sans-serif;    
-            font-weight: 500;
-            padding: 15px 20px;
-            font-size:70px;
-            letter-spacing: 5px;
-            position: relative;
+        .inicio{
+            margin-top: -20px;
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            left: -3%;
-            top: -25%;
-            gap: 10px;
-            .span{
-                font-family: 'Clicker script', cursive;
-                font-size: 70px;
-            }
-            &::before{
-                content: '';
-                position: absolute;
-                width: 90%;
-                height: 75px;
-                border-bottom: 5px solid #0095ff;
-                border-left: 5px solid #0095ff;
-                bottom: 0;
-                left: 0;
-            }
-            &::after{
-                content: '';
-                display: block;
-                position: absolute;
-                width: 90%;
-                height: 75px;
-                border-top: 5px solid #0095ff;
-                border-right: 5px solid #0095ff;
-                top: 0;
-                right: 0;
-            }
-        }
-        .pablo{
-            display: flex;
-            flex-wrap: wrap;
             flex-direction: column;
-            margin-top: -20px;  
-            margin: 20px;
-            padding: 0;
-            top: -30%;  
-                .info-prop{
-                    display: flex;
-                    flex-wrap: wrap;
-                    text-align: start;
-                    margin-top: -50px;
-                    font-size: 50px;
-                    font-weight: 700;
-                    right: 40%;
-                    span{
-                        font-family: 'Clicker script', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-                        font-size: 50px;
-                        color: #0062ff;
-                    }
-                }
-            .descrip{
+            img{
+                margin: 10px auto;
+                width:500px;
+                height: 500px;
+                justify-content: center;
+                border-radius: 10px;
+                border: 2px solid black;
+            }
+            h1{    
+                font-size:large sans-serif;    
+                font-weight: 500;
+                padding: 15px 20px;
+                font-size:70px;
+                letter-spacing: 5px;
+                position: relative;
                 display: flex;
                 flex-wrap: wrap;
-                margin-top: 3rem;
-                font-size:50%;
-                width: 590px;
-                font-weight: 100;
-                    a{
-                        color: black;
-                        text-decoration: none;
-                        list-style: none;
-                        font-weight: 700;
-                        color: #0062ff;
-                        content: '';
-                        position: absolute;
-                        padding: 1px;
-                        border-bottom: 5px solid #0095ff;
-                    }
+                top: 10%;
+                gap: 10px;
+                .span{
+                    font-family: 'Clicker script', cursive;
+                    font-size: 90px;
+                    margin-top: -20px;
                 }
+                &::before{
+                    content: '';
+                    position: absolute;
+                    width: 90%;
+                    height: 75px;
+                    border-bottom: 5px solid #0095ff;
+                    border-left: 5px solid #0095ff;
+                    bottom: 15%;
+                    left: 0;
+                }
+                &::after{
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width: 90%;
+                    height: 75px;
+                    border-top: 5px solid #0095ff;
+                    border-right: 5px solid #0095ff;
+                    top: 0;
+                    right: 0;
+                }
+            }
         }
-     
     }
 }
-// =========== COMIENZO ESTILOS SKLLS ===================
-
+// =========== COMIENZO ESTILOS S/MÍ ===================
+.sobre-mi{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 15%;
+    align-items: center;
+    text-align: start;
+    padding: 25px;
+    .pablo{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: -40%;  
+        margin: 20px;
+        padding: 0;
+        top: -30%;  
+            .info-prop{
+                display: flex;
+                flex-wrap: wrap;
+                text-align: start;
+                margin-top: -50px;
+                font-size: 50px;
+                font-weight: 700;
+                right: 40%;
+                span{
+                    font-family: 'Clicker script', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                    font-size: 50px;
+                    color: #0062ff;
+                }
+            }
+        .descrip{
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 3rem;
+            font-size:110%;
+            width:790px;
+            font-weight: 700;
+                span{
+                    font-family: 'Clicker script', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                    font-size: 45px;
+                    color: #0062ff;
+                    justify-content: center;
+                    
+                }
+                a{
+                    color: black;
+                    text-decoration: none;
+                    list-style: none;
+                    font-weight: 700;
+                    color: #0062ff;
+                    content: '';
+                    position: absolute;
+                    padding: 1px;
+                    border-bottom: 5px solid #0095ff;
+                }
+            }
+    }
+    .btn-cv{
+        padding: 20px 20px;
+        margin: 10px;
+        border-radius: 25px;
+        color: #0062ff;
+        cursor: pointer;
+        &:hover{
+            box-shadow: 0 10px 5px #0095ff5f;
+        }
+    }
+}
 .skills{   
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap:70px;
-    height: 500px;
-    margin-top: 100px;
+    gap:12%;
+    height: 700px;
     cursor: pointer;
     h5{
         margin: 30px;
@@ -213,7 +217,6 @@ body{
     }
 
 }
-
 // =========== COMIENZO ESTILOS PROYECTOS ===================
 .trabajos{
     margin: 20px;
@@ -237,8 +240,8 @@ body{
         display: flex;
         align-items: start;
         align-self: center;
-        width: 250px;
-        height: 250px;
+        width: 350px;
+        height:350px;
         object-fit: cover;
         border: 1px solid black;
         &:hover{
@@ -260,7 +263,30 @@ body{
 
     }
 }
+// =========== COMIENZO ESTILOS ESTUDIOS ===================
 
+.educacion{
+    width:50%;
+    padding: 30px;
+    margin: 20px auto;
+    margin-bottom: 150px;
+    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    .tarjet-educ{
+        margin: 20px;
+        padding: 10px;
+        border: 2px solid rgba(0, 0, 0, 0.495);
+        border-radius: 10px;
+        cursor: pointer;
+        &:hover{
+            transform: scale(1.3);
+            transition: 3s;
+        }
+    }
+}
+
+// =========== COMIENZO ESTILOS CONTACTOS ===================
 .contact section{
     display: flex;
     width: 100%;
