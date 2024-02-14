@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Open+Sans:ital,wght@0,300;1,400;1,500&family=Oswald:wght@400;500;600;700&family=Playfair+Display:ital@1&family=Poppins:wght@400;500;600;700;800&family=Quicksand:wght@300;500&family=Raleway&family=Titillium+Web:ital,wght@1,200&display=swap');
 *{
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     box-sizing: border-box;
     background-color: #f2f2ff;
 }
@@ -55,6 +55,39 @@ body{
             margin-top: 8px;
         }
         
+    }
+}
+/* ========  ESTILOS NAVEGADOR  ========= */
+.nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    ul{
+        margin: 20px auto;
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        list-style: none;
+        text-decoration: none;
+        justify-content: center;
+        li a{
+            margin: 10px;
+            padding: 10px;
+            align-items: center;
+            color: black;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            &:hover{
+                padding: 10px 5px;
+                border: 1px solid #ccc;
+                border-radius: 25px;
+                background-color: #0095ff5a;
+            }
+        }
     }
 }
 /* ========  ESTILOS PANEL ========= */
