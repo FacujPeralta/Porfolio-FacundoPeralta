@@ -63,13 +63,12 @@ body{
     flex-wrap: wrap;
     margin-top:10%;
     margin-bottom: 50px;
-    display: block;
     ul{
+        display: block;
         position: absolute;
         left: 0px;
         margin: 20px;
         padding: 10px;
-        display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         list-style: none;
@@ -370,4 +369,76 @@ body{
             box-shadow: 10px 10px 20px rgb(146, 145, 145);
         }
     }
+}
+// =========== COMIENZO MEDIAQUERY ===================
+@media(max-width:768px){
+    // =========== COMIENZO MEDIAQUERY NAVEGADOR===================
+    .nav{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin: 10px;
+        padding: 5px;
+        width: 100%;
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            list-style: none;
+            text-decoration: none;
+            justify-content: center;
+            &::before{
+                display: none;
+            }
+            li a{
+                display: flex;
+                flex-wrap: wrap;
+                font-size: small;
+                margin: 5px;
+                padding: 5px;
+            }
+        }
+    }
+}
+// =========== COMIENZO MEDIAQUERY PANEL===================
+@media(max-width:768px){
+    .panel{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 200px;
+        .inicio{
+            margin: 15px auto;
+            display: flex;
+            gap: 10px;
+            h1{
+                align-items: center;
+                font-size: 5px;
+                font-weight: 100;
+                display: flex;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    width: 90%;
+                    height: 75px;
+                    border-bottom: 5px solid #0095ff;
+                    border-left: 5px solid #0095ff;
+                    bottom: -35%;
+                    left: 0;
+                }
+                &::after{
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width: 90%;
+
+                    border-top: 5px solid #0095ff;
+                    border-right: 5px solid #0095ff;
+                    top: -3%;
+                    right: 32px;
+                }
+            }
+        }
+    }
+
 }

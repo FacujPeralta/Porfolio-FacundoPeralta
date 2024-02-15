@@ -66,14 +66,13 @@ body {
   flex-wrap: wrap;
   margin-top: 10%;
   margin-bottom: 50px;
-  display: block;
 }
 .nav ul {
+  display: block;
   position: absolute;
   left: 0px;
   margin: 20px;
   padding: 10px;
-  display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   list-style: none;
@@ -369,6 +368,74 @@ body {
 }
 .contact a:hover {
   box-shadow: 10px 10px 20px rgb(146, 145, 145);
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 10px;
+    padding: 5px;
+    width: 100%;
+  }
+  .nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    list-style: none;
+    text-decoration: none;
+    justify-content: center;
+  }
+  .nav ul::before {
+    display: none;
+  }
+  .nav ul li a {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: small;
+    margin: 5px;
+    padding: 5px;
+  }
+}
+@media (max-width: 768px) {
+  .panel {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 200px;
+  }
+  .panel .inicio {
+    margin: 15px auto;
+    display: flex;
+    gap: 10px;
+  }
+  .panel .inicio h1 {
+    align-items: center;
+    font-size: 5px;
+    font-weight: 100;
+    display: flex;
+  }
+  .panel .inicio h1::before {
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 75px;
+    border-bottom: 5px solid #0095ff;
+    border-left: 5px solid #0095ff;
+    bottom: -35%;
+    left: 0;
+  }
+  .panel .inicio h1::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 90%;
+    border-top: 5px solid #0095ff;
+    border-right: 5px solid #0095ff;
+    top: -3%;
+    right: 32px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
