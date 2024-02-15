@@ -8,7 +8,7 @@
 
 * {
   padding: 0px;
-  margin: 0px;
+  margin: 0;
   text-decoration: none;
   outline: none;
   box-sizing: border-box;
@@ -60,21 +60,34 @@ body {
 
 /* ========  ESTILOS NAVEGADOR  ========= */
 .nav {
+  width: 500px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
-  margin-top: 20px;
+  margin-top: 10%;
   margin-bottom: 50px;
+  display: block;
 }
 .nav ul {
-  margin: 20px auto;
+  position: absolute;
+  left: 0px;
+  margin: 20px;
   padding: 10px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   list-style: none;
   text-decoration: none;
   justify-content: center;
+}
+.nav ul::before {
+  content: "";
+  position: absolute;
+  height: 500px;
+  color: #0095ff;
+  border: 2px solid #0095ff;
+  top: 0px;
+  left: 241px;
 }
 .nav ul li a {
   margin: 10px;
@@ -108,7 +121,7 @@ body {
   justify-content: center;
 }
 .panel .informacion .inicio {
-  margin-top: -20px;
+  margin-top: -10%;
   display: flex;
   flex-direction: row;
   gap: 50px;
