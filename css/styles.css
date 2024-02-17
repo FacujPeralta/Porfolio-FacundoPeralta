@@ -270,12 +270,14 @@ body {
 }
 
 .trabajos {
-  margin: 20px;
+  margin: 20px auto;
   text-align: center;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
+  width: 750px;
 }
 .trabajos .cada-uno {
   width: 550px;
