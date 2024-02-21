@@ -60,20 +60,22 @@ body {
 
 /* ========  ESTILOS NAVEGADOR  ========= */
 .nav {
-  width: 500px;
+  justify-content: start;
+  align-items: start;
   display: flex;
-  flex-direction: column;
+  position: fixed;
+  flex-direction: row;
   flex-wrap: wrap;
-  margin-top: 10%;
   margin-bottom: 50px;
 }
 .nav ul {
-  display: block;
+  display: flex;
+  flex-direction: row;
   position: absolute;
   left: 0px;
   margin: 20px;
   padding: 10px;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
   list-style: none;
   text-decoration: none;
@@ -97,11 +99,16 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
 }
-.nav ul li a:hover {
-  padding: 10px 5px;
-  border: 1px solid #ccc;
-  border-radius: 25px;
-  background-color: rgba(0, 149, 255, 0.3529411765);
+.nav ul li a .btn-descrip {
+  border: 1px solid black;
+  border-radius: 15px;
+  background-color: rgba(0, 149, 255, 0.5254901961);
+  padding: 10px 15px;
+  cursor: pointer;
+}
+.nav ul li a .btn-descrip:hover {
+  background-color: #0095ff;
+  color: white;
 }
 
 /* ========  ESTILOS PANEL ========= */
@@ -339,8 +346,8 @@ body {
 
 .contact section {
   display: flex;
-  width: 100%;
-  margin: 20px;
+  width: 80px;
+  margin: 20px auto;
   padding: 10px;
 }
 .contact section .container {
