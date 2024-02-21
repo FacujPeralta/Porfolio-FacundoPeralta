@@ -24,10 +24,10 @@ body{
     flex: 0 0 100%;
     max-width: 100%;
     margin-bottom: 60px;
-    margin-top: 250px;
+    margin-top: 17rem;;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    margin-left: 45%;
     h2{
         font-size: 40px;
         color:black;
@@ -65,6 +65,7 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
     margin-bottom: 50px;
+    margin-top: 150px;
     ul{
         display: flex;
         flex-direction: row;
@@ -117,12 +118,13 @@ body{
     margin: 20px auto;
     align-content: center;
     margin-top: 150px;
+    margin-bottom: 100px;
     .informacion{
         font-size: 50px;
         margin: 20px auto;
         justify-content:center;
         .inicio{
-            margin-top: -10%;
+            margin-top: 0%;
             display: flex;
             flex-direction: row;
             gap: 50px;
@@ -147,6 +149,8 @@ body{
                 flex-wrap: wrap;
                 top: 10%;
                 gap: 10px;
+                margin-top: 50px;
+                
                 .span{
                     font-family: 'Clicker script', cursive;
                     font-size: 90px;
@@ -251,21 +255,28 @@ body{
 }
 .skills{   
     display: flex;
+    width: 75rem;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap:12%;
+    gap: 25%;
     height: 700px;
+    margin: 10px auto;
+    margin-bottom: 25rem;
     cursor: pointer;
     h5{
         margin: 30px;
     }
     .progress{
-
+        align-items: center;
+        border: 1px solid cadetblue;
+        border-radius: 15px;
+        padding: 30px;
         gap:30px;
         &:hover{
         transform: scale(1.5);
         transition: 0.5s;
+        box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.194);
         }
     }
     .skill-precent{
